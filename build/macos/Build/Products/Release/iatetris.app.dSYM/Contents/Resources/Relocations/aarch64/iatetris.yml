@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Products/Release/iatetris.app/Contents/MacOS/iatetris'
+binary-path:     '/Users/marlonfalcon/Documents/Projects/iatetris/build/macos/Build/Products/Release/iatetris.app/Contents/MacOS/iatetris'
 relocations:
   - { offsetInCU: 0x27, offset: 0xC65F4, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC12awakeFromNibyyF', symObjAddr: 0x0, symBinAddr: 0x1000019AC, symSize: 0x150 }
   - { offsetInCU: 0x8E, offset: 0xC665B, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC12awakeFromNibyyFTo', symObjAddr: 0x150, symBinAddr: 0x100001AFC, symSize: 0x28 }

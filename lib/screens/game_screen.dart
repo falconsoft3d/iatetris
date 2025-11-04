@@ -47,6 +47,8 @@ class _GameScreenState extends State<GameScreen> {
         gameLogic.rotatePiece();
       } else if (event.logicalKey == LogicalKeyboardKey.enter) {
         gameLogic.hardDrop();
+      } else if (event.logicalKey == LogicalKeyboardKey.keyC) {
+        gameLogic.holdPiece(); // Hold piece with C key
       } else if (event.logicalKey == LogicalKeyboardKey.keyP) {
         if (gameLogic.isPlaying) {
           gameLogic.pauseGame();
@@ -128,6 +130,8 @@ class _GameScreenState extends State<GameScreen> {
                               NextPieceWidget(gameLogic: gameLogic),
                               SizedBox(height: 20),
                               _buildGameOverlay(),
+                              SizedBox(height: 20),
+                              _buildAuthorInfo(),
                             ],
                           ),
                         ),
@@ -201,36 +205,84 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buildHoldArea() {
-    return Container(
-      width: 120,
-      height: 120,
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.3),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.2)),
-      ),
-      child: Column(
-        children: [
-          Text(
-            'Hold',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-            ),
+    return GestureDetector(
+      onTap: () => gameLogic.holdPiece(),
+      child: Container(
+        width: 120,
+        height: 120,
+        padding: EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: gameLogic.getCanHold 
+              ? Colors.black.withOpacity(0.3)
+              : Colors.grey.withOpacity(0.3),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: gameLogic.getCanHold 
+                ? Colors.white.withOpacity(0.2)
+                : Colors.grey.withOpacity(0.2)
           ),
-          SizedBox(height: 8),
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(8),
+        ),
+        child: Column(
+          children: [
+            Text(
+              'Hold (C)',
+              style: TextStyle(
+                color: gameLogic.getCanHold 
+                    ? Colors.white 
+                    : Colors.grey,
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
               ),
-              // Placeholder for held piece
             ),
-          ),
-        ],
+            SizedBox(height: 8),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: gameLogic.getHeldPiece != null
+                    ? _buildHeldPieceDisplay(gameLogic.getHeldPiece!)
+                    : Center(
+                        child: Text(
+                          'Empty',
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 10,
+                          ),
+                        ),
+                      ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHeldPieceDisplay(Tetromino piece) {
+    return Center(
+      child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: piece.shape.asMap().entries.map((rowEntry) {
+            return Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: rowEntry.value.asMap().entries.map((colEntry) {
+                bool isBlock = colEntry.value == 1;
+                return Container(
+                  width: 8,
+                  height: 8,
+                  margin: EdgeInsets.all(0.5),
+                  decoration: BoxDecoration(
+                    color: isBlock ? piece.color : Colors.transparent,
+                    borderRadius: BorderRadius.circular(1),
+                  ),
+                );
+              }).toList(),
+            );
+          }).toList(),
+        ),
       ),
     );
   }
@@ -293,11 +345,76 @@ class _GameScreenState extends State<GameScreen> {
               ),
               textAlign: TextAlign.center,
             ),
+            SizedBox(height: 4),
+            Text(
+              'C to Hold piece',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+              ),
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       );
     }
     
     return Container();
+  }
+
+  Widget _buildAuthorInfo() {
+    return Container(
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.black.withOpacity(0.3),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white.withOpacity(0.2)),
+      ),
+      child: Column(
+        children: [
+          Icon(
+            Icons.person,
+            color: Colors.white.withOpacity(0.8),
+            size: 24,
+          ),
+          SizedBox(height: 8),
+          Text(
+            'Autor:',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.8),
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          Text(
+            'Marlon Falcon Hdez',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(height: 8),
+          Text(
+            'Web:',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.8),
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          Text(
+            'www.marlonfalcon.com',
+            style: TextStyle(
+              color: Colors.cyan,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
   }
 }

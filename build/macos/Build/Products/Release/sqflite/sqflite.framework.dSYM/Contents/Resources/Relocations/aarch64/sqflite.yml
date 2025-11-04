@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Products/Release/sqflite/sqflite.framework/Versions/A/sqflite'
+binary-path:     '/Users/marlonfalcon/Documents/Projects/iatetris/build/macos/Build/Products/Release/sqflite/sqflite.framework/Versions/A/sqflite'
 relocations:
   - { offsetInCU: 0x33, offset: 0x9570, size: 0x8, addend: 0x0, symName: _sqfliteVersionString, symObjAddr: 0x0, symBinAddr: 0xA2F0, symSize: 0x0 }
   - { offsetInCU: 0x67, offset: 0x95A4, size: 0x8, addend: 0x0, symName: _sqfliteVersionNumber, symObjAddr: 0x28, symBinAddr: 0xA318, symSize: 0x0 }
@@ -139,9 +139,9 @@ relocations:
   - { offsetInCU: 0x201, offset: 0xC183, size: 0x8, addend: 0x0, symName: _SqfliteParamErrorMessage, symObjAddr: 0x4498, symBinAddr: 0xC120, symSize: 0x0 }
   - { offsetInCU: 0x216, offset: 0xC198, size: 0x8, addend: 0x0, symName: _SqfliteParamErrorData, symObjAddr: 0x44A0, symBinAddr: 0xC128, symSize: 0x0 }
   - { offsetInCU: 0x22B, offset: 0xC1AD, size: 0x8, addend: 0x0, symName: _SqfliteSqlPragmaSqliteDefensiveOff, symObjAddr: 0x44A8, symBinAddr: 0xC130, symSize: 0x0 }
-  - { offsetInCU: 0x27A, offset: 0xC1FC, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x11870, symBinAddr: 0x11888, symSize: 0x0 }
-  - { offsetInCU: 0x290, offset: 0xC212, size: 0x8, addend: 0x0, symName: __lastDatabaseId, symObjAddr: 0x11878, symBinAddr: 0x11890, symSize: 0x0 }
-  - { offsetInCU: 0x2AD, offset: 0xC22F, size: 0x8, addend: 0x0, symName: __databaseOpenCount, symObjAddr: 0x11880, symBinAddr: 0x11898, symSize: 0x0 }
+  - { offsetInCU: 0x27A, offset: 0xC1FC, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x11898, symBinAddr: 0x11888, symSize: 0x0 }
+  - { offsetInCU: 0x290, offset: 0xC212, size: 0x8, addend: 0x0, symName: __lastDatabaseId, symObjAddr: 0x118A0, symBinAddr: 0x11890, symSize: 0x0 }
+  - { offsetInCU: 0x2AD, offset: 0xC22F, size: 0x8, addend: 0x0, symName: __databaseOpenCount, symObjAddr: 0x118A8, symBinAddr: 0x11898, symSize: 0x0 }
   - { offsetInCU: 0x36A, offset: 0xC2EC, size: 0x8, addend: 0x0, symName: _sqfliteHasSqlLogLevel, symObjAddr: 0x0, symBinAddr: 0x4D5C, symSize: 0xC }
   - { offsetInCU: 0x394, offset: 0xC316, size: 0x8, addend: 0x0, symName: _sqfliteHasVerboseLogLevel, symObjAddr: 0xC, symBinAddr: 0x4D68, symSize: 0xC }
   - { offsetInCU: 0x3BE, offset: 0xC340, size: 0x8, addend: 0x0, symName: '+[SqflitePlugin registerWithRegistrar:]', symObjAddr: 0x18, symBinAddr: 0x4D74, symSize: 0xA4 }

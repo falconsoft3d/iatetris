@@ -80,9 +80,12 @@ class GameInfoWidget extends StatelessWidget {
           _buildInstructionRow('← →', 'Move'),
           _buildInstructionRow('↓', 'Soft Drop'),
           _buildInstructionRow('Enter', 'Hard Drop'),
+          _buildInstructionRow('C', 'Hold Piece'),
           _buildInstructionRow('P', 'Pause'),
           _buildInstructionRow('R', 'Restart'),
           _buildInstructionRow('📊', 'View Records'),
+          SizedBox(height: 8),
+          _buildAutoSaveInfo(),
         ],
       ),
     );
@@ -115,6 +118,35 @@ class GameInfoWidget extends StatelessWidget {
                 color: Colors.white.withOpacity(0.8),
                 fontSize: 10,
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAutoSaveInfo() {
+    return Container(
+      padding: EdgeInsets.all(6),
+      decoration: BoxDecoration(
+        color: Colors.green.withOpacity(0.2),
+        borderRadius: BorderRadius.circular(4),
+        border: Border.all(color: Colors.green.withOpacity(0.3)),
+      ),
+      child: Row(
+        children: [
+          Icon(
+            Icons.save,
+            color: Colors.green,
+            size: 12,
+          ),
+          SizedBox(width: 4),
+          Text(
+            'Auto-save every 30s',
+            style: TextStyle(
+              color: Colors.green,
+              fontSize: 9,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],

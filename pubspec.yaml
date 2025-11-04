@@ -27,3 +27,5 @@ flutter_icons:
   ios: false
   macos:
     generate: true
+  windows:
+    generate: true

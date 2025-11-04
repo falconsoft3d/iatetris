@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		aAxGg0Q+dQoQhfAk9AHVCAev338=
+		1Il/qcqW5EzaGt7IvYwMhDGuvoU=
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		UJbX03llIRUdbY9zyV+4oCdb46I=
+		3U4E5JaSHj193jROjnqeWAwJy0Y=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
@@ -23,19 +23,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			DIDKm0bZQwQp5Tnb20k1yDTvtl4=
+			IladVtkcD+jZsT1JNNMcRbwS6ZQ=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"0c80ca9b46d9430429e539dbdb4935c834efb65e" or cdhash H"81c85283f40e7c7e11d37cb27e03688b6abb6673"</string>
+			<string>cdhash H"22569d56d91c0fe8d9b13d4934d31c45bc12e994" or cdhash H"a44b532b0df5ffc3ba88eaa38df336d8a240cea7"</string>
 		</dict>
 		<key>Frameworks/FMDB.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			EgR9JErkRrxCJfEfXOBajZbf3Ls=
+			IbqvFiQnXTCwWEuzIEBtsDJpW3o=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"12047d244ae446bc4225f11f5ce05a8d96dfdcbb" or cdhash H"99645a15420d418f10b5019070b473cee2f888ce"</string>
+			<string>cdhash H"21baaf1624275d30b0584bb320406db032695b7a" or cdhash H"e701980bf6a3ce577fd2dd90d46f0949900e71f7"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -203,23 +203,23 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Edhu3GCRb1mUaZo1ji2dcAHU1gk=
+			lAak5gykBzX1jR6QUB1SVetW+2I=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"11d86edc60916f5994699a358e2d9d7001d4d609" or cdhash H"5653ea7baf64e7934ce10365d8042c9eb3291570"</string>
+			<string>cdhash H"9406a4e60ca40735f58d1e90501d5255eb56fb62" or cdhash H"d1410c1e9cd77d1af0c9eaa1e5ea23737366b28a"</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cmkXXoTx+ZUjFC50oDL4Cmb6f++oBA9wPejlIra72Gc=
+			dvce4hArdRgbnRb8eiAsdbdWLr6VLLrblnk4aKsfQhM=
 			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmItefXnpwwKjjV/4frAu7eamSe5D/r99TcjISRNOVA=
+			fxhAXGthTU2mT3S67xbxt+ruSZMoBMCw577jGehjw3M=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>

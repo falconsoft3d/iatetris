@@ -1,15 +1,15 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Products/Release/FMDB/FMDB.framework/Versions/A/FMDB'
+binary-path:     '/Users/marlonfalcon/Documents/Projects/iatetris/build/macos/Build/Products/Release/FMDB/FMDB.framework/Versions/A/FMDB'
 relocations:
   - { offsetInCU: 0x34, offset: 0xC81F4, size: 0x8, addend: 0x0, symName: _FMDBVersionString, symObjAddr: 0x0, symBinAddr: 0xCFB0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xC8229, size: 0x8, addend: 0x0, symName: _FMDBVersionNumber, symObjAddr: 0x28, symBinAddr: 0xCFD8, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0xC8266, size: 0x8, addend: 0x0, symName: '+[FMDatabase databaseWithPath:]', symObjAddr: 0x0, symBinAddr: 0x33D4, symSize: 0x48 }
   - { offsetInCU: 0x48, offset: 0xC8287, size: 0x8, addend: 0x0, symName: '+[FMDatabase FMDBVersion]', symObjAddr: 0x224, symBinAddr: 0x35F8, symSize: 0x74 }
-  - { offsetInCU: 0x72, offset: 0xC82B1, size: 0x8, addend: 0x0, symName: _FMDBVersion.once, symObjAddr: 0x171C8, symBinAddr: 0x15B68, symSize: 0x0 }
-  - { offsetInCU: 0x88, offset: 0xC82C7, size: 0x8, addend: 0x0, symName: _FMDBVersion.FMDBVersionVal, symObjAddr: 0x171D0, symBinAddr: 0x15B70, symSize: 0x0 }
+  - { offsetInCU: 0x72, offset: 0xC82B1, size: 0x8, addend: 0x0, symName: _FMDBVersion.once, symObjAddr: 0x171E8, symBinAddr: 0x15B68, symSize: 0x0 }
+  - { offsetInCU: 0x88, offset: 0xC82C7, size: 0x8, addend: 0x0, symName: _FMDBVersion.FMDBVersionVal, symObjAddr: 0x171F0, symBinAddr: 0x15B70, symSize: 0x0 }
   - { offsetInCU: 0xE7, offset: 0xC8326, size: 0x8, addend: 0x0, symName: '-[FMDatabase inSavePoint:]', symObjAddr: 0x2B1C, symBinAddr: 0x5EF0, symSize: 0x138 }
-  - { offsetInCU: 0x113, offset: 0xC8352, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x171D8, symBinAddr: 0x15B78, symSize: 0x0 }
+  - { offsetInCU: 0x113, offset: 0xC8352, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x171F8, symBinAddr: 0x15B78, symSize: 0x0 }
   - { offsetInCU: 0x4D6, offset: 0xC8715, size: 0x8, addend: 0x0, symName: '+[FMDatabase databaseWithPath:]', symObjAddr: 0x0, symBinAddr: 0x33D4, symSize: 0x48 }
   - { offsetInCU: 0x51D, offset: 0xC875C, size: 0x8, addend: 0x0, symName: '+[FMDatabase databaseWithURL:]', symObjAddr: 0x48, symBinAddr: 0x341C, symSize: 0x48 }
   - { offsetInCU: 0x564, offset: 0xC87A3, size: 0x8, addend: 0x0, symName: '-[FMDatabase init]', symObjAddr: 0x90, symBinAddr: 0x3464, symSize: 0x8 }
@@ -172,7 +172,7 @@ relocations:
   - { offsetInCU: 0x805, offset: 0xCCA26, size: 0x8, addend: 0x0, symName: '-[FMDatabase(FMDatabaseAdditions) validateSQL:error:]', symObjAddr: 0x898, symBinAddr: 0x6FC8, symSize: 0x144 }
   - { offsetInCU: 0x27, offset: 0xCCD8E, size: 0x8, addend: 0x0, symName: '+[FMDatabasePool databasePoolWithPath:]', symObjAddr: 0x0, symBinAddr: 0x710C, symSize: 0x48 }
   - { offsetInCU: 0x35, offset: 0xCCD9C, size: 0x8, addend: 0x0, symName: '-[FMDatabasePool inSavePoint:]', symObjAddr: 0xDA0, symBinAddr: 0x7EAC, symSize: 0x15C }
-  - { offsetInCU: 0x61, offset: 0xCCDC8, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x8278, symBinAddr: 0x15B80, symSize: 0x0 }
+  - { offsetInCU: 0x61, offset: 0xCCDC8, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x8298, symBinAddr: 0x15B80, symSize: 0x0 }
   - { offsetInCU: 0x268, offset: 0xCCFCF, size: 0x8, addend: 0x0, symName: '+[FMDatabasePool databasePoolWithPath:]', symObjAddr: 0x0, symBinAddr: 0x710C, symSize: 0x48 }
   - { offsetInCU: 0x2AF, offset: 0xCD016, size: 0x8, addend: 0x0, symName: '+[FMDatabasePool databasePoolWithURL:]', symObjAddr: 0x48, symBinAddr: 0x7154, symSize: 0x74 }
   - { offsetInCU: 0x2F6, offset: 0xCD05D, size: 0x8, addend: 0x0, symName: '+[FMDatabasePool databasePoolWithPath:flags:]', symObjAddr: 0xBC, symBinAddr: 0x71C8, symSize: 0x58 }
@@ -226,7 +226,7 @@ relocations:
   - { offsetInCU: 0x27, offset: 0xCE33C, size: 0x8, addend: 0x0, symName: '+[FMDatabaseQueue databaseQueueWithPath:]', symObjAddr: 0x0, symBinAddr: 0x80AC, symSize: 0x48 }
   - { offsetInCU: 0x41, offset: 0xCE356, size: 0x8, addend: 0x0, symName: _kDispatchQueueSpecificKey, symObjAddr: 0x13C8, symBinAddr: 0x10128, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xCE37E, size: 0x8, addend: 0x0, symName: '-[FMDatabaseQueue inSavePoint:]', symObjAddr: 0x924, symBinAddr: 0x8998, symSize: 0xDC }
-  - { offsetInCU: 0x95, offset: 0xCE3AA, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x8048, symBinAddr: 0x15B88, symSize: 0x0 }
+  - { offsetInCU: 0x95, offset: 0xCE3AA, size: 0x8, addend: 0x0, symName: '_inSavePoint:.savePointIdx', symObjAddr: 0x8068, symBinAddr: 0x15B88, symSize: 0x0 }
   - { offsetInCU: 0x30C, offset: 0xCE621, size: 0x8, addend: 0x0, symName: '+[FMDatabaseQueue databaseQueueWithPath:]', symObjAddr: 0x0, symBinAddr: 0x80AC, symSize: 0x48 }
   - { offsetInCU: 0x363, offset: 0xCE678, size: 0x8, addend: 0x0, symName: '+[FMDatabaseQueue databaseQueueWithURL:]', symObjAddr: 0x48, symBinAddr: 0x80F4, symSize: 0x54 }
   - { offsetInCU: 0x3AA, offset: 0xCE6BF, size: 0x8, addend: 0x0, symName: '+[FMDatabaseQueue databaseQueueWithPath:flags:]', symObjAddr: 0x9C, symBinAddr: 0x8148, symSize: 0x58 }

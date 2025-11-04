@@ -12,10 +12,13 @@ class GameLogic extends ChangeNotifier {
   GameBoard board = GameBoard();
   Tetromino? currentPiece;
   Tetromino? nextPiece;
+  Tetromino? heldPiece;
+  bool canHold = true; // Prevents holding multiple times per piece
   List<Tetromino> nextPieces = [];
   
   GameState gameState = GameState.paused;
   Timer? gameTimer;
+  Timer? autoSaveTimer;
   
   // Game statistics
   int score = 0;
@@ -38,6 +41,7 @@ class GameLogic extends ChangeNotifier {
   GameLogic() {
     _initializeGame();
     _loadPersonalBest();
+    _startAutoSave();
   }
 
   void _initializeGame() {
@@ -49,6 +53,8 @@ class GameLogic extends ChangeNotifier {
     currentDropTime = baseDropTime;
     gameStartTime = DateTime.now();
     gameDuration = 0;
+    heldPiece = null;
+    canHold = true;
     
     // Generate next pieces
     nextPieces.clear();
@@ -68,6 +74,7 @@ class GameLogic extends ChangeNotifier {
   void _spawnNewPiece() {
     currentPiece = nextPieces.removeAt(0);
     nextPieces.add(Tetromino.random());
+    canHold = true; // Reset hold ability for new piece
     
     // Check if game is over
     if (currentPiece != null && !board.isValidPosition(currentPiece!)) {
@@ -246,9 +253,62 @@ class GameLogic extends ChangeNotifier {
     }
   }
 
+  // Hold functionality
+  void holdPiece() {
+    if (currentPiece == null || gameState != GameState.playing || !canHold) return;
+    
+    if (heldPiece == null) {
+      // First time holding a piece
+      heldPiece = currentPiece!.copyWith(x: 0, y: 0, rotation: 0);
+      _spawnNewPiece();
+    } else {
+      // Swap current piece with held piece
+      Tetromino temp = currentPiece!.copyWith(x: 0, y: 0, rotation: 0);
+      currentPiece = heldPiece!.copyWith(x: 4, y: 0, rotation: 0);
+      heldPiece = temp;
+      
+      // Check if swapped piece is valid, if not game over
+      if (!board.isValidPosition(currentPiece!)) {
+        gameState = GameState.gameOver;
+        _stopTimer();
+        _saveGameRecord();
+      }
+    }
+    
+    canHold = false; // Prevent holding again until next piece
+    notifyListeners();
+  }
+
+  // Auto-save functionality
+  void _startAutoSave() {
+    autoSaveTimer = Timer.periodic(Duration(seconds: 30), (timer) {
+      _autoSaveProgress();
+    });
+  }
+
+  void _autoSaveProgress() async {
+    if (gameState == GameState.playing && score > 0) {
+      try {
+        final record = GameRecord(
+          score: score,
+          level: level,
+          lines: totalLines,
+          date: DateTime.now(),
+          duration: currentGameDuration,
+        );
+        
+        await _dbHelper.insertRecord(record);
+        await _loadPersonalBest(); // Update personal best if needed
+      } catch (e) {
+        print('Auto-save failed: $e');
+      }
+    }
+  }
+
   @override
   void dispose() {
     _stopTimer();
+    autoSaveTimer?.cancel();
     super.dispose();
   }
 
@@ -285,4 +345,10 @@ class GameLogic extends ChangeNotifier {
   bool get isNewPersonalBest {
     return personalBest == null || score > personalBest!.score;
   }
+
+  // Getter for held piece
+  Tetromino? get getHeldPiece => heldPiece;
+  
+  // Getter for can hold status
+  bool get getCanHold => canHold;
 }
