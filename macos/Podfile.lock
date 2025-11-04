@@ -1,0 +1,33 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
+  - sqflite (0.0.2):
+    - FlutterMacOS
+    - FMDB (>= 2.7.5)
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - sqflite (from `Flutter/ephemeral/.symlinks/plugins/sqflite/macos`)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  sqflite:
+    :path: Flutter/ephemeral/.symlinks/plugins/sqflite/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: ae6af50a8ea7d6103d888583d46bd8328a7e9811
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea
+
+PODFILE CHECKSUM: 69608711ca93a0af5aac7e2f834b34cf2422afce
+
+COCOAPODS: 1.15.0

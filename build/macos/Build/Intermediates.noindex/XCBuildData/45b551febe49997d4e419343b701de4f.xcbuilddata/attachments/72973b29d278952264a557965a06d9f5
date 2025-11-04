@@ -1,0 +1,30 @@
+{
+  "" : {
+    "const-values" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.swiftconstvalues",
+    "dependencies" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.d",
+    "diagnostics" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.dia",
+    "emit-module-dependencies" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master-emit-module.dia",
+    "swift-dependencies" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.swiftdeps"
+  },
+  "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/marlonfalcon/Documents/test/iatetris/macos/Flutter/GeneratedPluginRegistrant.swift" : {
+    "index-unit-output-path" : "/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedPluginRegistrant.o",
+    "llvm-bc" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedPluginRegistrant.bc",
+    "object" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/GeneratedPluginRegistrant.o"
+  },
+  "/Users/marlonfalcon/Documents/test/iatetris/macos/Runner/AppDelegate.swift" : {
+    "index-unit-output-path" : "/Runner.build/Release/Runner.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/marlonfalcon/Documents/test/iatetris/macos/Runner/MainFlutterWindow.swift" : {
+    "index-unit-output-path" : "/Runner.build/Release/Runner.build/Objects-normal/arm64/MainFlutterWindow.o",
+    "llvm-bc" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/MainFlutterWindow.bc",
+    "object" : "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/MainFlutterWindow.o"
+  }
+}

@@ -1,0 +1,20 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Products/Release/iatetris.app/Contents/MacOS/iatetris'
+relocations:
+  - { offsetInCU: 0x27, offset: 0xC9722, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC12awakeFromNibyyF', symObjAddr: 0x0, symBinAddr: 0x100001890, symSize: 0x140 }
+  - { offsetInCU: 0x8E, offset: 0xC9789, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC12awakeFromNibyyFTo', symObjAddr: 0x140, symBinAddr: 0x1000019D0, symSize: 0x30 }
+  - { offsetInCU: 0xD4, offset: 0xC97CF, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC11contentRect9styleMask7backing5deferACSo6CGRectV_So013NSWindowStyleH0VSo18NSBackingStoreTypeVSbtcfcTo', symObjAddr: 0x170, symBinAddr: 0x100001A00, symSize: 0x80 }
+  - { offsetInCU: 0x14D, offset: 0xC9848, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowCMa', symObjAddr: 0x220, symBinAddr: 0x100001AB0, symSize: 0x14 }
+  - { offsetInCU: 0x336, offset: 0xC9A31, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowC12awakeFromNibyyF', symObjAddr: 0x0, symBinAddr: 0x100001890, symSize: 0x140 }
+  - { offsetInCU: 0x459, offset: 0xC9B54, size: 0x8, addend: 0x0, symName: '_$s8iatetris17MainFlutterWindowCfD', symObjAddr: 0x1F0, symBinAddr: 0x100001A80, symSize: 0x30 }
+  - { offsetInCU: 0x27, offset: 0xC9BA3, size: 0x8, addend: 0x0, symName: '_$s8iatetris11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCFTo', symObjAddr: 0x0, symBinAddr: 0x100001AD0, symSize: 0x10 }
+  - { offsetInCU: 0x4B, offset: 0xC9BC7, size: 0x8, addend: 0x0, symName: '_$s8iatetris11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCFTo', symObjAddr: 0x0, symBinAddr: 0x100001AD0, symSize: 0x10 }
+  - { offsetInCU: 0x7D, offset: 0xC9BF9, size: 0x8, addend: 0x0, symName: '_$s8iatetris11AppDelegateCACycfcTo', symObjAddr: 0x10, symBinAddr: 0x100001AE0, symSize: 0x30 }
+  - { offsetInCU: 0xD1, offset: 0xC9C4D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x70, symBinAddr: 0x100001B40, symSize: 0x10 }
+  - { offsetInCU: 0xEF, offset: 0xC9C6B, size: 0x8, addend: 0x0, symName: '_$s8iatetris11AppDelegateCMa', symObjAddr: 0x80, symBinAddr: 0x100001B50, symSize: 0x14 }
+  - { offsetInCU: 0x219, offset: 0xC9D95, size: 0x8, addend: 0x0, symName: '_$s8iatetris11AppDelegateCfD', symObjAddr: 0x40, symBinAddr: 0x100001B10, symSize: 0x30 }
+  - { offsetInCU: 0x2B, offset: 0xC9DF8, size: 0x8, addend: 0x0, symName: '_$s8iatetris19ResourceBundleClass33_27DBF8539F9AE6319907FA58CB229316LLCfD', symObjAddr: 0x0, symBinAddr: 0x100001B70, symSize: 0x20 }
+  - { offsetInCU: 0x6D, offset: 0xC9E3A, size: 0x8, addend: 0x0, symName: '_$s8iatetris19ResourceBundleClass33_27DBF8539F9AE6319907FA58CB229316LLCMa', symObjAddr: 0x20, symBinAddr: 0x100001B90, symSize: 0x14 }
+  - { offsetInCU: 0x161, offset: 0xC9F2E, size: 0x8, addend: 0x0, symName: '_$s8iatetris19ResourceBundleClass33_27DBF8539F9AE6319907FA58CB229316LLCfD', symObjAddr: 0x0, symBinAddr: 0x100001B70, symSize: 0x20 }
+...

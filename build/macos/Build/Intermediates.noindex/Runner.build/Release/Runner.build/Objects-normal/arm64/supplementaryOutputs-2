@@ -1,0 +1,9 @@
+"/Users/marlonfalcon/Documents/test/iatetris/macos/Runner/MainFlutterWindow.swift":
+  dependencies: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.d"
+  const-values: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.swiftconstvalues"
+  swiftdoc: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/iatetris.swiftdoc"
+  swiftmodule: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/iatetris.swiftmodule"
+  objc-header: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/iatetris-Swift.h"
+  abi-baseline-json: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/iatetris.abi.json"
+  diagnostics: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/Runner-master.dia"
+  swiftsourceinfo: "/Users/marlonfalcon/Documents/test/iatetris/build/macos/Build/Intermediates.noindex/Runner.build/Release/Runner.build/Objects-normal/arm64/iatetris.swiftsourceinfo"
